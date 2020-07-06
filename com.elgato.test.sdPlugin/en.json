@@ -1,0 +1,9 @@
+{
+  "Description": "Track the number of times you press a key.", 
+  "Name": "Counter", 
+  "Category": "Test",
+  "com.elgato.test.action": {
+    "Name": "Counter",
+    "Tooltip": "test"
+  }
+}
