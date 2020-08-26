@@ -5,8 +5,7 @@ This is a custom elgato plugin that I decided to make because of how much more c
 It needs this to work [daikin-wrapper-websocket](https://github.com/Elian0213/daikin-wrapper-websocket)
 
 # Configuration
-Take a look at ``helper/Daikin.js`` to adjust the POST and GET requests being made to fit your Daikin AC.
-Because of limitations I didn't make a fully optional configuration file.
+Most of the configuration should be done in the websocket (backend) of it.
 
 # Setup
 Run the ``release.bat`` and then run the Egato file created ``Release/com.elgato.[name].DeckPlugin`` 
