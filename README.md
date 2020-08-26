@@ -1,4 +1,5 @@
 # Elgato AC controller (For Daikin Airco's)
+![Streamdeck](https://i.imgur.com/o2u1aiR.png)
 This is a custom elgato plugin that I decided to make because of how much more convenient pressing a button is than grabbing my AC remote and going from there
 
 # Configuration
