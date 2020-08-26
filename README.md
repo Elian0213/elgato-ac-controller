@@ -2,7 +2,7 @@
 ![Streamdeck](https://i.imgur.com/o2u1aiR.png)
 This is a custom elgato plugin that I decided to make because of how much more convenient pressing a button is than grabbing my AC remote and going from there
 
-It needs this to work [daikin-controller](https://github.com/Elian0213/daikin-controller)
+It needs this to work [daikin-wrapper-websocket](https://github.com/Elian0213/daikin-wrapper-websocket)
 
 # Configuration
 Take a look at ``helper/Daikin.js`` to adjust the POST and GET requests being made to fit your Daikin AC.
