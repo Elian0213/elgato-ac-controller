@@ -1,0 +1,117 @@
+{
+  "Actions": [
+    {
+      "Icon": "images/buttons/togglePower/actionImage",
+      "Name": "On / Off",
+      "States": [
+        {
+          "Image": "images/buttons/togglePower/off/keyIcon",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        },
+        {
+          "Image": "images/buttons/togglePower/on/keyIcon",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Turn the AC On / Off",
+      "UUID": "daikin.power.toggle"
+    },
+    {
+      "Icon": "images/buttons/temperatureIncrease/actionImage",
+      "Name": "Temperature Increase",
+      "States": [
+        {
+          "Image": "images/buttons/temperatureIncrease/keyIcon",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Increase the temperature of the AC",
+      "UUID": "daikin.temperature.increase"
+    },
+    {
+      "Icon": "images/buttons/temperatureDecrease/actionImage",
+      "Name": "Temperature Decrease",
+      "States": [
+        {
+          "Image": "images/buttons/temperatureDecrease/keyIcon",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Decrease the temperature of the AC",
+      "UUID": "daikin.temperature.decrease"
+    },
+    {
+      "Icon": "images/buttons/setHeating/actionImage",
+      "Name": "Heating mode",
+      "States": [
+        {
+          "Image": "images/buttons/setHeating/keyIcon",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Set the mode to heating",
+      "UUID": "daikin.temperature.mode.heating"
+    },
+    {
+      "Icon": "images/buttons/setCooling/actionImage",
+      "Name": "Cooling mode",
+      "States": [
+        {
+          "Image": "images/buttons/setCooling/keyIcon",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Set the mode to cooling",
+      "UUID": "daikin.temperature.mode.cooling"
+    },
+    {
+      "Icon": "images/buttons/currentTemperature/actionImage",
+      "Name": "Current temperature",
+      "States": [
+        {
+          "Image": "images/buttons/currentTemperature/keyIcon",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Display current temperature inside",
+      "UUID": "daikin.temperature.current"
+    }
+  ],
+  "SDKVersion": 2,
+  "Author": "Elian0213",
+  "CodePath": "index.html",
+  "Description": "A Controller for any type of Daikin AC",
+  "Name": "Daikin AC",
+  "Icon": "images/icons/category",
+  "URL": "https://github.com/Elian0213/elgato-ac-controller",
+  "Version": "0.1",
+  "Category": "Daikin",
+  "CategoryIcon": "images/icons/category",
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion" : "10.11"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion" : "10"
+    }
+  ],
+  "Software":
+  {
+    "MinimumVersion" : "4.1"
+  }
+}

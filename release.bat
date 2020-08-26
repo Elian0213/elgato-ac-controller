@@ -1,5 +1,5 @@
 @echo off
-DEL Release\com.elgato.test.streamDeckPlugin
-DistributionTool.exe -b -i com.elgato.test.sdPlugin -o Release
+DEL Release\com.daikin.controller.streamDeckPlugin
+DistributionTool.exe -b -i com.daikin.controller.sdPlugin -o Release
 echo Created!
 PAUSE
