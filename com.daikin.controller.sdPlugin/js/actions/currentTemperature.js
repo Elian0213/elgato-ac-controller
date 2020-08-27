@@ -3,6 +3,7 @@ let currentTemperature = {
 
     keyDown: (data) => {
         console.log(`current temperature keyDown`)
+        daikinWebsocket.send('updateTemperatureDisplay')
     },
     keyUp: (data) => {
         console.log(`current temperature onKeyUp`)
