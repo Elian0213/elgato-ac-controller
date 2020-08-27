@@ -13,7 +13,7 @@ let DestinationEnum = Object.freeze({
 
 function connectElgatoStreamDeckSocket(inPort, inPluginUUID, inRegisterEvent, inInfo) {
   websocket = new WebSocket(`ws://127.0.0.1:${inPort}`);
-  daikinWebsocket = new WebSocket(`ws://127.0.0.1:6969`)
+  daikinWebsocket = new WebSocket(config.DaikinWS)
 
   pluginUUID = inPluginUUID
 

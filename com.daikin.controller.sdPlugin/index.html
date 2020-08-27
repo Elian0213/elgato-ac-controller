@@ -4,9 +4,15 @@
 	<title>com.daikin.controller</title>
 	<meta charset="utf-8" />
 
+	<script>
+		const config = {
+			// The IP + Port of your local version of https://github.com/Elian0213/daikin-wrapper-websocket
+			DaikinWS: 'ws://127.0.0.1:6969',
+		}
+	</script>
+
 	<!--	Helpers-->
 	<script src="js/helpers/global.js"></script>
-	<script src="js/helpers/daikin.js"></script>
 
 	<!--	actions  -->
 	<script src="js/actions/temperatureIncrease.js"></script>
