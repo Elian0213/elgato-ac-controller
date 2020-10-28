@@ -1,4 +1,4 @@
-class modeHeating {
+class temperatureDisplay {
   // The type of action
   type
 
@@ -6,12 +6,11 @@ class modeHeating {
   context
 
   constructor() {
-    this.type = 'daikin.temperature.mode.heating';
+    this.type = 'daikin.temperature.current';
   }
 
   keyDown(data) {
-    state.daikin.storage.settings.mode = '4';
-    postNewDaikinSettings()
+    updateDaikinForce();
   }
 
   willAppear(data) {

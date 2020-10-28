@@ -1,21 +1,25 @@
-let togglePower = {
-    type: "daikin.power.toggle",
+class togglePower {
+  // The type of action
+  type
 
-    keyDown: (data) => {
-        daikinWebsocket.send("togglePower")
-    },
-    keyUp: (data) => {
-        console.log(`togglePower onKeyUp`)
-    },
-    willAppear: (data) => {
-        console.log(`togglePower onWillAppear`)
-        togglePowerContext = data.context;
-        daikinWebsocket.send('updatePowerStatus')
-    },
-    titleParametersDidChange: (data) => {
-        console.log(`togglePower titleChange`)
-    },
-    willDisappear: (data) => {
-        console.log(`togglePower willDisappear`)
-    }
-};
+  // Context UID
+  context
+
+  constructor() {
+    this.type = 'daikin.power.toggle';
+  }
+
+  keyDown(data) {
+    let power = state.daikin.storage.settings.pow;
+
+    state.daikin.storage.settings.pow = power === '1' ? '0' : '1';
+
+    state.elgato.helper.setState(actionList['daikin.power.toggle'].context, Number(state.daikin.storage.settings.pow));
+
+    postNewDaikinSettings()
+  }
+
+  willAppear(data) {
+    this.context = data.context;
+  }
+}

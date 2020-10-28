@@ -15,7 +15,6 @@
           "FontSize": "16"
         }
       ],
-      "SupportedInMultiActions": false,
       "Tooltip": "Turn the AC On / Off",
       "UUID": "daikin.power.toggle"
     },
@@ -29,7 +28,6 @@
           "FontSize": "16"
         }
       ],
-      "SupportedInMultiActions": false,
       "Tooltip": "Increase the temperature of the AC",
       "UUID": "daikin.temperature.increase"
     },
@@ -43,7 +41,6 @@
           "FontSize": "16"
         }
       ],
-      "SupportedInMultiActions": false,
       "Tooltip": "Decrease the temperature of the AC",
       "UUID": "daikin.temperature.decrease"
     },
@@ -57,7 +54,6 @@
           "FontSize": "12"
         }
       ],
-      "SupportedInMultiActions": false,
       "Tooltip": "Set the mode to heating",
       "UUID": "daikin.temperature.mode.heating"
     },
@@ -71,7 +67,6 @@
           "FontSize": "12"
         }
       ],
-      "SupportedInMultiActions": false,
       "Tooltip": "Set the mode to cooling",
       "UUID": "daikin.temperature.mode.cooling"
     },
@@ -85,9 +80,8 @@
           "FontSize": "12"
         }
       ],
-      "SupportedInMultiActions": false,
       "Tooltip": "Display current temperature inside",
-      "UUID": "daikin.temperature.current"
+      "UUID": "daikin.temperature.display"
     }
   ],
   "SDKVersion": 2,

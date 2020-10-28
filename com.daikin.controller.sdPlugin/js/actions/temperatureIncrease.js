@@ -1,19 +1,21 @@
-let temperatureIncrease = {
-    type: "daikin.temperature.increase",
+class temperatureIncrease {
+  // The type of action
+  type
 
-    keyDown: (data) => {
-        daikinWebsocket.send("increaseTemperature")
-    },
-    keyUp: (data) => {
-        console.log(`temperature increase onKeyUp`)
-    },
-    willAppear: (data) => {
-        console.log(`temperature increase onWillAppear`)
-    },
-    titleParametersDidChange: (data) => {
-        console.log(`temperature increase titleChange`)
-    },
-    willDisappear: (data) => {
-        console.log(`temperature increase willDisappear`)
-    }
-};
+  // Context UID
+  context
+
+  constructor() {
+    this.type = 'daikin.temperature.increase';
+  }
+
+  keyDown(data) {
+    state.daikin.storage.settings.stemp = (Number(state.daikin.storage.settings.stemp) + 1).toString();
+
+    postNewDaikinSettings()
+  }
+
+  willAppear(data) {
+    this.context = data.context;
+  }
+}

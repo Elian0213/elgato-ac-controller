@@ -1,20 +1,20 @@
-let modeCooling = {
-    type: "daikin.temperature.mode.cooling",
+class modeCooling {
+  // The type of action
+  type
 
-    keyDown: (data) => {
-        console.log(`cooling mode keyDown`)
-        daikinWebsocket.send("setCooling")
-    },
-    keyUp: (data) => {
-        console.log(`cooling mode onKeyUp`)
-    },
-    willAppear: (data) => {
-        console.log(`cooling mode onWillAppear`)
-    },
-    titleParametersDidChange: (data) => {
-        console.log(`cooling mode titleChange`)
-    },
-    willDisappear: (data) => {
-        console.log(`cooling mode willDisappear`)
-    }
-};
+  // Context UID
+  context
+
+  constructor() {
+    this.type = 'daikin.temperature.mode.cooling';
+  }
+
+  keyDown(data) {
+    state.daikin.storage.settings.mode = '3';
+    postNewDaikinSettings()
+  }
+
+  willAppear(data) {
+    this.context = data.context;
+  }
+}

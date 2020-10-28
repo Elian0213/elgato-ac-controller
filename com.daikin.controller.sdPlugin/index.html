@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
 	<title>com.daikin.controller</title>
 	<meta charset="utf-8" />
@@ -7,23 +7,31 @@
 	<script>
 		const config = {
 			// The IP + Port of your local version of https://github.com/Elian0213/daikin-wrapper-websocket
-			DaikinWS: 'ws://127.0.0.1:6969',
+			DaikinWebsocketIP: 'ws://127.0.0.1:3000',
 		}
 	</script>
 
-	<!--	Helpers-->
-	<script src="js/helpers/global.js"></script>
+	<!-- State -->
+	<script src="js/state/state.js"></script>
+
+	<!-- Elgato -->
+	<script src="js/elgato/elgato-register.js"></script>
+	<script src="js/elgato/elgato-helper.js"></script>
+
+	<!-- Daikin -->
+	<script src="js/daikin/daikin-helper.js"></script>
+	<script src="js/daikin/daikin-register.js"></script>
 
 	<!--	actions  -->
 	<script src="js/actions/temperatureIncrease.js"></script>
 	<script src="js/actions/temperatureDecrease.js"></script>
-	<script src="js/actions/currentTemperature.js"></script>
+	<script src="js/actions/displayTemperature.js"></script>
 	<script src="js/actions/togglePower.js"></script>
 	<script src="js/actions/modeHeating.js"></script>
 	<script src="js/actions/modeCooling.js"></script>
 
 	<!--	Init  -->
-	<script src="js/script.js"></script>
+	<script src="js/app.js"></script>
 </head>
 <body>
 </body>
