@@ -72,7 +72,7 @@
     },
     {
       "Icon": "images/buttons/currentTemperature/actionImage",
-      "Name": "Current temperature",
+      "Name": "Display Temperature's",
       "States": [
         {
           "Image": "images/buttons/currentTemperature/keyIcon",

@@ -32,5 +32,5 @@ const postNewDaikinSettings = () => {
     value: state.daikin.storage.settings,
   }));
 
-  updateDisplayTemps(actionList['daikin.temperature.current'].context)
+  updateDisplayTemps(actionList['daikin.temperature.display'].context)
 }

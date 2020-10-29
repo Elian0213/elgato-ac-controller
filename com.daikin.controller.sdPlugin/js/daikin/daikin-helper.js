@@ -24,8 +24,8 @@ const updateDaikinSensor = (data) => {
     otemp: data.otemp,
   };
 
-  if (actionList['daikin.temperature.current'].context != null) {
-    updateDisplayTemps(actionList['daikin.temperature.current'].context)
+  if (actionList['daikin.temperature.display'].context != null) {
+    updateDisplayTemps(actionList['daikin.temperature.display'].context)
   }
 }
 
@@ -36,7 +36,7 @@ const updateDaikinSensor = (data) => {
 const updateDisplayTemps = (context) => {
   const data = state.daikin.storage.sensor;
 
-  let formatText = ` ${data.htemp} °C \n ${data.otemp} °C \n ${state.daikin.storage.settings.stemp} °C`;
+  let formatText = `🏠 ${Number(data.htemp)}° \n ${Number(state.daikin.storage.settings.stemp)}° \n ☁ ${Number(data.otemp)}°`;
 
   state.elgato.helper.setTitle(context, formatText);
   state.elgato.helper.setState(actionList['daikin.power.toggle'].context, Number(state.daikin.storage.settings.pow));

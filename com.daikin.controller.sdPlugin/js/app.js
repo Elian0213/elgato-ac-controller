@@ -5,7 +5,7 @@ const listenEvents = [
 ];
 
 const actionList = {
-  'daikin.temperature.current': new temperatureDisplay(),
+  'daikin.temperature.display': new temperatureDisplay(),
   'daikin.temperature.mode.heating': new modeHeating(),
   'daikin.temperature.mode.cooling': new modeCooling(),
   'daikin.temperature.increase': new temperatureIncrease(),
@@ -37,4 +37,9 @@ const initApp = async () => {
       console.error(data)
     }
   };
+
+  // Update every 20 seconds
+  setInterval(() => {
+    updateDaikinForce();
+  }, (20 * 1000));
 }

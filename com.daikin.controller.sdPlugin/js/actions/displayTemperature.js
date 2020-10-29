@@ -6,7 +6,7 @@ class temperatureDisplay {
   context
 
   constructor() {
-    this.type = 'daikin.temperature.current';
+    this.type = 'daikin.temperature.display';
   }
 
   keyDown(data) {
