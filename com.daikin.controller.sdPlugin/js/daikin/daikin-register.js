@@ -28,7 +28,8 @@ state.daikin.socket.onmessage = (data) => {
 const postNewDaikinSettings = () => {
   state.elgato.helper.setState(actionList['daikin.power.toggle'].context, Number(state.daikin.storage.settings.pow));
   state.daikin.socket.send(JSON.stringify({
-    name: 'setData',
+    device: 'aircon',
+    action: 'setData',
     value: state.daikin.storage.settings,
   }));
 
